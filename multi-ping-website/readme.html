@@ -1,0 +1,229 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="readme_files/filelist.xml">
+<title>MultiPing v0</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>bytebucket</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>6</o:TotalTime>
+  <o:Created>2004-06-29T02:11:00Z</o:Created>
+  <o:LastSaved>2004-06-29T02:16:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>335</o:Words>
+  <o:Characters>1912</o:Characters>
+  <o:Company>geekzone</o:Company>
+  <o:Lines>15</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2243</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><span class=SpellE>MultiPing</span> v0.1 (beta)</h1>
+
+<p class=MsoPlainText><a href="http://multiping.sourceforge.net/">multiping.sourceforge.net</a></p>
+
+<h2>Overview</h2>
+
+<p class=MsoPlainText><span class=SpellE>MultiPing</span> provides a
+multi-host, multi-protocol status monitoring tool.<span
+style='mso-spacerun:yes'>  </span>Currently, the supported protocols are ICMP
+Echo, HTTP, SMTP, and POP.<span style='mso-spacerun:yes'>  </span>This goes
+beyond simply using ICMP Echo to determine the status of a server to actually
+testing the protocols the server is expected to be providing.</p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>Note that <span class=SpellE>MultiPing</span> requires
+Java 1.5.x (which can be obtained from java.sun.com) as it uses one of the new
+features provided in this version to perform the ICMP Echo test.<span
+style='mso-spacerun:yes'>  </span>Unfortunately, <b style='mso-bidi-font-weight:
+normal'>there is a known bug (<a
+href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5061568">5061568</a>)
+which causes use of this feature to leak sockets on Windows platforms</b>.<span
+style='mso-spacerun:yes'>  </span>This has been fixed, according to the Sun bug
+database, but the fix hasn’t yet made it into a released build of Java
+1.5.x.<span style='mso-spacerun:yes'>  </span>It is expected that this will be
+resolved when 1.5.x is released.<span style='mso-spacerun:yes'>  </span>So, <b
+style='mso-bidi-font-weight:normal'>if you run <span class=SpellE>MultiPing</span>
+for an extended period of time all hosts will eventually status as down and
+other networking capabilities could be negatively impacted on your machine
+until you close and re-start <span class=SpellE>MultiPing</span></b>.</p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>Despite this, <span class=SpellE>MultiPing</span> is
+being released as an initial rough-cut beta as the issue is with the underlying
+Java native code not with <span class=SpellE>MultiPing</span> itself.</p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span class=SpellE>MultiPing</span> is provided as a <span
+class=SpellE>runnable</span> .jar file.<span style='mso-spacerun:yes'> 
+</span>You should be able to simply double-click the <span class=SpellE>multiping.jar</span>
+file to launch <span class=SpellE>MultiPing</span>.<span
+style='mso-spacerun:yes'>  </span>You can then right-click in the main window
+to access the context menu which will allow you to add, edit, and delete hosts
+from the list.</p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>Each host can have one or more of the supported protocols
+enabled.<span style='mso-spacerun:yes'>  </span>For each enabled protocol zero
+or more arguments can be provided which are used to status the specified
+protocol.</p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>A file will be created in the same directory as <span
+class=SpellE>multiping.jar</span> named <span class=SpellE>multiping.dat</span>.<span
+style='mso-spacerun:yes'>  </span><span class=GramE>This stores</span> the list
+of hosts, along with the protocols enabled for each host and the arguments to
+each enabled protocol.</p>
+
+<h2>History</h2>
+
+<p class=MsoPlainText>v0.1, 2004-06-28</p>
+
+<p class=MsoPlainText>* <span class=GramE>initial</span> rough-cut beta release</p>
+
+<h2>Links</h2>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'><a
+href="http://bytebucket.blogspot.com/">bytebucket.blogspot.com</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'><a
+href="http://www.sourceforge.net/">www.sourceforge.net</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'><a
+href="http://java.sun.com/">java.sun.com</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
